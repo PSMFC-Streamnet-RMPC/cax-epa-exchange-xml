@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cax="http://www.exchangenetwork.net/schema/CAX/1" targetNamespace="http://www.exchangenetwork.net/schema/CAX/1" elementFormDefault="qualified" version="1">
+	<xsd:annotation>
+		<xsd:documentation>Schema name:  Coordinated Assessments Data Exchange (CAX).  This schema document file name is SARRecord.xsd and can be found at http://www.streamnet.org/coordinated-assessments-xct-development/.</xsd:documentation>
+		<xsd:documentation>Description:  This schema document utilizes elements defined in the SARFields.xsd and GeneralTypes.xsd files.</xsd:documentation>
+		<xsd:documentation>Description:  This schema document defines a data record needed for creating a row of SAR data in the SARTable.xsd document.</xsd:documentation>
+		<xsd:documentation>Description:  "SAR" is Smolt to Adult Return rate.  Expressed as a percentage, it refers to the survival and return rate of anadromous fish from the smolt stage to the returning adult stage.  Data are for a specific population and outmigration year.</xsd:documentation>
+		<xsd:documentation>Description:  The "Coordinated Assessments Data Exchange Standard Version 20160527" document found at http://www.streamnet.org/coordinated-assessments-des/ contains details of the data types exchanged.  If there are discrepancies between that document and this schema please contact Mike Banach or Greg Wilke to determine if there is a reason for the discrepancy, or if there is simply an error, and for direction on how to proceed.</xsd:documentation>
+		<xsd:documentation>Developed by:  This schema document was originally created September 20, 2016 by Michael Banach, StreamNet Project, Pacific States Marine Fisheries Commission.  It was edited September 29, 2016 by William Rensmith (Windsor Solutions, Inc).</xsd:documentation>
+		<xsd:documentation>Last updated:  This schema document was last updated September 30, 2016.</xsd:documentation>
+		<xsd:documentation>Point of contact:  For schema questions, contact Mike at 503-595-3152 or mike_banach@psmfc.org.  For programming questions related to this schema contact Greg Wilke, StreamNet Project, Pacific States Marine Fisheries Commission, at 503-595-3157 or gwilke@psmfc.org.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="./SARFields.xsd"/>
+	<xsd:complexType name="SARRecordDataType">
+		<xsd:sequence>
+			<xsd:element ref="cax:ID"/>
+			<xsd:element ref="cax:PopID"/>
+			<xsd:element ref="cax:PopFit"/>
+			<xsd:element ref="cax:PopFitNotes"/>
+			<xsd:element ref="cax:SmoltLocation"/>
+			<xsd:element ref="cax:SmoltLocPTcode"/>
+			<xsd:element ref="cax:AdultLocation"/>
+			<xsd:element ref="cax:SARtype"/>
+			<xsd:element ref="cax:ScopeOfInference"/>
+			<xsd:element ref="cax:OutmigrationYear"/>
+			<xsd:element ref="cax:TRTmethod"/>
+			<xsd:element ref="cax:ContactAgency"/>
+			<xsd:element ref="cax:MethodNumber"/>
+			<xsd:element ref="cax:SAR"/>
+			<xsd:element ref="cax:SARLowerLimit"/>
+			<xsd:element ref="cax:SARUpperLimit"/>
+			<xsd:element ref="cax:SARAlpha"/>
+			<xsd:element ref="cax:ReturnsMissing"/>
+			<xsd:element ref="cax:ReturnsMissingExplanation"/>
+			<xsd:element ref="cax:RearingType"/>
+			<xsd:element ref="cax:TSO"/>
+			<xsd:element ref="cax:TSOLowerLimit"/>
+			<xsd:element ref="cax:TSOUpperLimit"/>
+			<xsd:element ref="cax:TSOAlpha"/>
+			<xsd:element ref="cax:TAR"/>
+			<xsd:element ref="cax:TARLowerLimit"/>
+			<xsd:element ref="cax:TARUpperLimit"/>
+			<xsd:element ref="cax:TARAlpha"/>
+			<xsd:element ref="cax:ReturnDef"/>
+			<xsd:element ref="cax:HarvestAdj"/>
+			<xsd:element ref="cax:OceanHarvest"/>
+			<xsd:element ref="cax:MainstemHarvest"/>
+			<xsd:element ref="cax:TribHarvest"/>
+			<xsd:element ref="cax:BroodStockRemoved"/>
+			<xsd:element ref="cax:ProtMethName"/>
+			<xsd:element ref="cax:ProtMethURL"/>
+			<xsd:element ref="cax:ProtMethDocumentation"/>
+			<xsd:element ref="cax:MethodAdjustments"/>
+			<xsd:element ref="cax:Comments"/>
+			<xsd:element ref="cax:NullRecord"/>
+			<xsd:element ref="cax:DataStatus"/>
+			<xsd:element ref="cax:LastUpdated"/>
+			<xsd:element ref="cax:IndicatorLocation"/>
+			<xsd:element ref="cax:MetricLocation"/>
+			<xsd:element ref="cax:MeasureLocation"/>
+			<xsd:element ref="cax:ContactPersonFirst"/>
+			<xsd:element ref="cax:ContactPersonLast"/>
+			<xsd:element ref="cax:ContactPhone"/>
+			<xsd:element ref="cax:ContactEmail"/>
+			<xsd:element ref="cax:MetaComments"/>
+			<xsd:element ref="cax:SubmitAgency"/>
+			<xsd:element ref="cax:RefID"/>
+			<xsd:element ref="cax:UpdDate"/>
+			<xsd:element ref="cax:DataEntry"/>
+			<xsd:element ref="cax:DataEntryNotes"/>
+			<xsd:element ref="cax:CompilerRecordID"/>
+			<xsd:element ref="cax:Publish"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="SARRecord" type="cax:SARRecordDataType"/>
+</xsd:schema>
