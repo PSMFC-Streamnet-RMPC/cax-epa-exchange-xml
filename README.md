@@ -4,7 +4,7 @@ This is the Coordinated Assessments - EPA Exchange Network XML schema publishing
 
 ## EPA Exchange Network
 
-The Environmental Protection Agency (EPA) Exchange Network (also known as the "Exchange Network") is a system of data exchange networks that allow organizations to share environmental data and information. The Exchange Network is designed to facilitate the sharing of environmental data and information between state, local, and tribal organizations, as well as between these organizations and the federal government. 
+The [__Environmental Protection Agency (EPA) Exchange Network__](https://www.epa.gov/exchangenetwork) (also known as the "Exchange Network") is a system of data exchange networks that allow organizations to share environmental data and information. The Exchange Network is designed to facilitate the sharing of environmental data and information between state, local, and tribal organizations, as well as between these organizations and the federal government. 
 
 It allows organizations to share data and information on a variety of environmental topics, such as air quality, water quality, and hazardous waste, to make informed decisions about environmental issues and contribute to the sustainability of the environment.
 
