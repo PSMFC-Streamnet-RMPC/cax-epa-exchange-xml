@@ -8,4 +8,8 @@ The Environmental Protection Agency (EPA) Exchange Network (also known as the "E
 
 It allows organizations to share data and information on a variety of environmental topics, such as air quality, water quality, and hazardous waste, to make informed decisions about environmental issues and contribute to the sustainability of the environment.
 
+## EPA Exchange Network Grant
+
+The [__EPA Exchange Network Grant Program__](https://www.epa.gov/exchangenetwork/exchange-network-grant-program) is a funding program that provides financial assistance to state, local and tribal organizations to help them establish and maintain data exchange networks that facilitate the sharing of environmental data and information. The program is focused on supporting the development of data exchange networks that can help organizations make informed decisions about environmental issues, and contribute to the sustainability of the environment.
+
 ## 2012 CAX Network Grant
