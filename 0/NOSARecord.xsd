@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cax="http://www.exchangenetwork.net/schema/CAX/2" targetNamespace="http://www.exchangenetwork.net/schema/CAX/2" elementFormDefault="qualified" version="2">
+	<xsd:annotation>
+		<xsd:documentation>Schema name:  Coordinated Assessments Data Exchange (CAX).  This schema document file name is NOSARecord.xsd and can be found at https://github.com/PSMFC-Streamnet-RMPC/cax-epa-exchange-xml.</xsd:documentation>
+		<xsd:documentation>Description:  This schema document utilizes elements defined in the NOSAFields.xsd and GeneralTypes.xsd files.</xsd:documentation>
+		<xsd:documentation>Description:  This schema document defines a data record needed for creating a row of NOSA data in the NOSATable.xsd document.</xsd:documentation>
+		<xsd:documentation>Description:  "NOSA" is Natural Origin Spawner Abundance, and refers to the number of fish in a population that spawn in a given year.</xsd:documentation>
+		<xsd:documentation>Description:  The "Coordinated Assessments Data Exchange Standards Version 20240517" document found at https://www.streamnet.org/resources/exchange-tools/des/ contains details of the data types exchanged.  If there are discrepancies between that document and this schema please contact Mike Banach or Greg Wilke to determine if there is a reason for the discrepancy, or if there is simply an error, and for direction on how to proceed.</xsd:documentation>
+		<xsd:documentation>Developed by:  This schema document was originally created September 20, 2016 by Michael Banach, StreamNet Project, Pacific States Marine Fisheries Commission.  It was edited September 29, 2016 by William Rensmith (Windsor Solutions, Inc).</xsd:documentation>
+		<xsd:documentation>Last updated:  This schema document was last updated July 11, 2024.</xsd:documentation>
+		<xsd:documentation>Point of contact:  For schema questions, contact Mike at 503-595-3152 or mike_banach@psmfc.org.  For programming questions related to this schema contact Greg Wilke, StreamNet Project, Pacific States Marine Fisheries Commission, at 503-595-3157 or gwilke@psmfc.org.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="./NOSAFields.xsd"/>
+	<xsd:complexType name="NOSARecordDataType">
+		<xsd:sequence>
+			<xsd:element ref="cax:ID"/>
+			<xsd:element ref="cax:TimeSeriesID"/>
+			<xsd:element ref="cax:CommonName"/>
+			<xsd:element ref="cax:Run"/>
+			<xsd:element ref="cax:RecoveryDomain"/>
+			<xsd:element ref="cax:ESU_DPS"/>
+			<xsd:element ref="cax:MajorPopGroup"/>
+			<xsd:element ref="cax:PopID"/>
+			<xsd:element ref="cax:CommonPopName"/>
+			<xsd:element ref="cax:PopFit"/>
+			<xsd:element ref="cax:PopFitNotes"/>
+			<xsd:element ref="cax:EstimateType"/>
+			<xsd:element ref="cax:WaterBody"/>
+			<xsd:element ref="cax:EscapementLong"/>
+			<xsd:element ref="cax:EscapementLat"/>
+			<xsd:element ref="cax:SpawningYear"/>
+			<xsd:element ref="cax:EscapementTiming"/>
+			<xsd:element ref="cax:ContactAgency"/>
+			<xsd:element ref="cax:MethodNumber"/>
+			<xsd:element ref="cax:BestValue"/>
+			<xsd:element ref="cax:NOSAIJ"/>
+			<xsd:element ref="cax:NOSAIJLowerLimit"/>
+			<xsd:element ref="cax:NOSAIJUpperLimit"/>
+			<xsd:element ref="cax:NOSAIJAlpha"/>
+			<xsd:element ref="cax:NOSAEJ"/>
+			<xsd:element ref="cax:NOSAEJLowerLimit"/>
+			<xsd:element ref="cax:NOSAEJUpperLimit"/>
+			<xsd:element ref="cax:NOSAEJAlpha"/>
+			<xsd:element ref="cax:NOBroodStockRemoved"/>
+			<xsd:element ref="cax:pHOSij"/>
+			<xsd:element ref="cax:pHOSijLowerLimit"/>
+			<xsd:element ref="cax:pHOSijUpperLimit"/>
+			<xsd:element ref="cax:pHOSijAlpha"/>
+			<xsd:element ref="cax:pHOSej"/>
+			<xsd:element ref="cax:pHOSejLowerLimit"/>
+			<xsd:element ref="cax:pHOSejUpperLimit"/>
+			<xsd:element ref="cax:pHOSejAlpha"/>
+			<xsd:element ref="cax:NOSJF"/>
+			<xsd:element ref="cax:NOSJFLowerLimit"/>
+			<xsd:element ref="cax:NOSJFUpperLimit"/>
+			<xsd:element ref="cax:NOSJFAlpha"/>
+			<xsd:element ref="cax:HOSJF"/>
+			<xsd:element ref="cax:TSAIJ"/>
+			<xsd:element ref="cax:TSAIJLowerLimit"/>
+			<xsd:element ref="cax:TSAIJUpperLimit"/>
+			<xsd:element ref="cax:TSAIJAlpha"/>
+			<xsd:element ref="cax:TSAEJ"/>
+			<xsd:element ref="cax:TSAEJLowerLimit"/>
+			<xsd:element ref="cax:TSAEJUpperLimit"/>
+			<xsd:element ref="cax:TSAEJAlpha"/>
+			<xsd:element ref="cax:Age2Prop"/>
+			<xsd:element ref="cax:Age2PropLowerLimit"/>
+			<xsd:element ref="cax:Age2PropUpperLimit"/>
+			<xsd:element ref="cax:Age3Prop"/>
+			<xsd:element ref="cax:Age3PropLowerLimit"/>
+			<xsd:element ref="cax:Age3PropUpperLimit"/>
+			<xsd:element ref="cax:Age4Prop"/>
+			<xsd:element ref="cax:Age4PropLowerLimit"/>
+			<xsd:element ref="cax:Age4PropUpperLimit"/>
+			<xsd:element ref="cax:Age5Prop"/>
+			<xsd:element ref="cax:Age5PropLowerLimit"/>
+			<xsd:element ref="cax:Age5PropUpperLimit"/>
+			<xsd:element ref="cax:Age6Prop"/>
+			<xsd:element ref="cax:Age6PropLowerLimit"/>
+			<xsd:element ref="cax:Age6PropUpperLimit"/>
+			<xsd:element ref="cax:Age7Prop"/>
+			<xsd:element ref="cax:Age7PropLowerLimit"/>
+			<xsd:element ref="cax:Age7PropUpperLimit"/>
+			<xsd:element ref="cax:Age8Prop"/>
+			<xsd:element ref="cax:Age8PropLowerLimit"/>
+			<xsd:element ref="cax:Age8PropUpperLimit"/>
+			<xsd:element ref="cax:Age9Prop"/>
+			<xsd:element ref="cax:Age9PropLowerLimit"/>
+			<xsd:element ref="cax:Age9PropUpperLimit"/>
+			<xsd:element ref="cax:Age10Prop"/>
+			<xsd:element ref="cax:Age10PropLowerLimit"/>
+			<xsd:element ref="cax:Age10PropUpperLimit"/>
+			<xsd:element ref="cax:Age11PlusProp"/>
+			<xsd:element ref="cax:Age11PlusPropLowerLimit"/>
+			<xsd:element ref="cax:Age11PlusPropUpperLimit"/>
+			<xsd:element ref="cax:AgePropAlpha"/>
+			<xsd:element ref="cax:ProtMethName"/>
+			<xsd:element ref="cax:ProtMethURL"/>
+			<xsd:element ref="cax:ProtMethDocumentation"/>
+			<xsd:element ref="cax:MethodAdjustments"/>
+			<xsd:element ref="cax:OtherDataSources"/>
+			<xsd:element ref="cax:Comments"/>
+			<xsd:element ref="cax:NullRecord"/>
+			<xsd:element ref="cax:DataStatus"/>
+			<xsd:element ref="cax:IndicatorLocation"/>
+			<xsd:element ref="cax:MetricLocation"/>
+			<xsd:element ref="cax:MeasureLocation"/>
+			<xsd:element ref="cax:ContactPersonFirst"/>
+			<xsd:element ref="cax:ContactPersonLast"/>
+			<xsd:element ref="cax:ContactPhone"/>
+			<xsd:element ref="cax:ContactEmail"/>
+			<xsd:element ref="cax:MetaComments"/>
+			<xsd:element ref="cax:SubmitAgency"/>
+			<xsd:element ref="cax:RefID"/>
+			<xsd:element ref="cax:UpdDate"/>
+			<xsd:element ref="cax:DataEntry"/>
+			<xsd:element ref="cax:DataEntryNotes"/>
+			<xsd:element ref="cax:CompilerRecordID"/>
+			<xsd:element ref="cax:Publish"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="NOSARecord" type="cax:NOSARecordDataType"/>
+</xsd:schema>

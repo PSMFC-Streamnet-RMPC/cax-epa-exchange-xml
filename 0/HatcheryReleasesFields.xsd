@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cax="http://www.exchangenetwork.net/schema/CAX/2" targetNamespace="http://www.exchangenetwork.net/schema/CAX/2" elementFormDefault="qualified" version="2">
+	<xsd:annotation>
+		<xsd:documentation>Schema name:  Coordinated Assessments Data Exchange (CAX).  This schema document file name is HatcheryReleasesFields.xsd and can be found at https://github.com/PSMFC-Streamnet-RMPC/cax-epa-exchange-xml.</xsd:documentation>
+		<xsd:documentation>Description:  This schema document utilizes user-defined data types found in the GeneralTypes.xsd.</xsd:documentation>
+		<xsd:documentation>Description:  This schema document defines the fields needed for defining an SAR record in the SAR_HatcheryRecord.xsd document.</xsd:documentation>
+		<xsd:documentation>Description:  "Releases" are fish released from a hatchery facility to the wild environment.</xsd:documentation>
+		<xsd:documentation>Description:  The "Coordinated Assessments Hatchery Data Exchange Standards Version 20230614" document found at https://www.streamnet.org/resources/exchange-tools/des/ contains details of the data types exchanged.  If there are discrepancies between that document and this schema please contact Mike Banach or Greg Wilke to determine if there is a reason for the discrepancy, or if there is simply an error, and for direction on how to proceed.</xsd:documentation>
+		<xsd:documentation>Developed by:  This schema document was originally created July 11, 2024 by Michael Banach, StreamNet Project, Pacific States Marine Fisheries Commission.</xsd:documentation>
+		<xsd:documentation>Last updated:  This schema document was last updated [never updated].</xsd:documentation>
+		<xsd:documentation>Point of contact:  For schema questions, contact Mike at 503-595-3152 or mike_banach@psmfc.org.  For programming questions related to this schema contact Greg Wilke, StreamNet Project, Pacific States Marine Fisheries Commission, at 503-595-3157 or gwilke@psmfc.org.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="./GeneralTypes.xsd"/>
+	<xsd:element name="LifeStage" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Zygote (eyed eggs)"/>
+				<xsd:enumeration value="Emergent fry"/>
+				<xsd:enumeration value="Fed fry"/>
+				<xsd:enumeration value="Fingerling"/>
+				<xsd:enumeration value="Advanced fingerling"/>
+				<xsd:enumeration value="Yearling"/>
+				<xsd:enumeration value="Presmolt"/>
+				<xsd:enumeration value="Smolt"/>
+				<xsd:enumeration value="Adult"/>
+				<xsd:enumeration value="Unknown"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReleaseEndDate" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:date">
+				<xsd:minInclusive value="1850-01-01"/>
+				<xsd:maxInclusive value="2050-01-01"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReleaseStartDate" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:date">
+				<xsd:minInclusive value="1850-01-01"/>
+				<xsd:maxInclusive value="2050-01-01"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReleaseStrategy" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Forced release"/>
+				<xsd:enumeration value="Volitional release"/>
+				<xsd:enumeration value="Emergency release"/>
+				<xsd:enumeration value="Egg box"/>
+				<xsd:enumeration value="Mixed"/>
+				<xsd:enumeration value="Unknown"/>
+				<xsd:enumeration value="Not specified"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+</xsd:schema>

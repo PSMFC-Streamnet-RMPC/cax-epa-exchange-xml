@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<SARTable xmlns="http://www.exchangenetwork.net/schema/CAX/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.exchangenetwork.net/schema/CAX/2 file:///c:/Files/Working/HCAX%20XML%20Schema/2024%20HCAX/0/SARTable.xsd">
+	<SARRecord>
+		<ID>00000000-0000-0000-0000-000000000000</ID>
+		<TimeSeriesID>0</TimeSeriesID>
+		<CommonName>string</CommonName>
+		<Run>string</Run>
+		<RecoveryDomain>Southern Oregon/Northern California Coast</RecoveryDomain>
+		<ESU_DPS>string</ESU_DPS>
+		<MajorPopGroup>string</MajorPopGroup>
+		<PopID>65535</PopID>
+		<CommonPopName>string</CommonPopName>
+		<PopFit>Multiple</PopFit>
+		<PopFitNotes>string</PopFitNotes>
+		<SmoltLocation>string</SmoltLocation>
+		<SmoltDef>string</SmoltDef>
+		<SmoltLocPTcode>string</SmoltLocPTcode>
+		<AdultLocation>string</AdultLocation>
+		<ReturnDef>string</ReturnDef>
+		<SARtype>Named dam to tributary</SARtype>
+		<OutmigrationYear>2050</OutmigrationYear>
+		<ContactAgency>Washington Department of Fish and Wildlife</ContactAgency>
+		<MethodNumber>255</MethodNumber>
+		<BestValue>Not specified</BestValue>
+		<SAR>100</SAR>
+		<SARLowerLimit>100</SARLowerLimit>
+		<SARUpperLimit>100</SARUpperLimit>
+		<SARAlpha>0.5</SARAlpha>
+		<ReturnsMissing>Yes</ReturnsMissing>
+		<ReturnsMissingExplanation>string</ReturnsMissingExplanation>
+		<ScopeOfInference>string</ScopeOfInference>
+		<RearingType>Unknown</RearingType>
+		<TSO>0</TSO>
+		<TSOLowerLimit>0</TSOLowerLimit>
+		<TSOUpperLimit>0</TSOUpperLimit>
+		<TSOAlpha>0.5</TSOAlpha>
+		<TAR>0</TAR>
+		<TARLowerLimit>0</TARLowerLimit>
+		<TARUpperLimit>0</TARUpperLimit>
+		<TARAlpha>0.5</TARAlpha>
+		<HarvestAdj>Not adjusted</HarvestAdj>
+		<OceanHarvest>0</OceanHarvest>
+		<MainstemHarvest>0</MainstemHarvest>
+		<TribHarvest>0</TribHarvest>
+		<BroodStockRemoved>0</BroodStockRemoved>
+		<ProtMethName>string</ProtMethName>
+		<ProtMethURL>string</ProtMethURL>
+		<ProtMethDocumentation>string</ProtMethDocumentation>
+		<MethodAdjustments>string</MethodAdjustments>
+		<OtherDataSources>string</OtherDataSources>
+		<Comments>string</Comments>
+		<NullRecord>Yes</NullRecord>
+		<DataStatus>Final</DataStatus>
+		<IndicatorLocation>string</IndicatorLocation>
+		<MetricLocation>string</MetricLocation>
+		<MeasureLocation>string</MeasureLocation>
+		<ContactPersonFirst>string</ContactPersonFirst>
+		<ContactPersonLast>string</ContactPersonLast>
+		<ContactPhone>string</ContactPhone>
+		<ContactEmail>string</ContactEmail>
+		<MetaComments>string</MetaComments>
+		<SubmitAgency>string</SubmitAgency>
+		<RefID>0</RefID>
+		<UpdDate>2014-01-01T00:00:00</UpdDate>
+		<DataEntry>string</DataEntry>
+		<DataEntryNotes>string</DataEntryNotes>
+		<CompilerRecordID>string</CompilerRecordID>
+		<Publish>No</Publish>
+	</SARRecord>
+	<SARRecord>
+		<ID>00000000-0000-0000-0000-000000000000</ID>
+		<TimeSeriesID>0</TimeSeriesID>
+		<CommonName>string</CommonName>
+		<Run>string</Run>
+		<RecoveryDomain>Southern Oregon/Northern California Coast</RecoveryDomain>
+		<ESU_DPS>string</ESU_DPS>
+		<MajorPopGroup>string</MajorPopGroup>
+		<PopID>65535</PopID>
+		<CommonPopName>string</CommonPopName>
+		<PopFit>Multiple</PopFit>
+		<PopFitNotes>string</PopFitNotes>
+		<SmoltLocation>string</SmoltLocation>
+		<SmoltDef>string</SmoltDef>
+		<SmoltLocPTcode>string</SmoltLocPTcode>
+		<AdultLocation>string</AdultLocation>
+		<ReturnDef>string</ReturnDef>
+		<SARtype>Named dam to tributary</SARtype>
+		<OutmigrationYear>2050</OutmigrationYear>
+		<ContactAgency>Washington Department of Fish and Wildlife</ContactAgency>
+		<MethodNumber>255</MethodNumber>
+		<BestValue>Not specified</BestValue>
+		<SAR>100</SAR>
+		<SARLowerLimit>100</SARLowerLimit>
+		<SARUpperLimit>100</SARUpperLimit>
+		<SARAlpha>0.5</SARAlpha>
+		<ReturnsMissing>Yes</ReturnsMissing>
+		<ReturnsMissingExplanation>string</ReturnsMissingExplanation>
+		<ScopeOfInference>string</ScopeOfInference>
+		<RearingType>Unknown</RearingType>
+		<TSO>0</TSO>
+		<TSOLowerLimit>0</TSOLowerLimit>
+		<TSOUpperLimit>0</TSOUpperLimit>
+		<TSOAlpha>0.5</TSOAlpha>
+		<TAR>0</TAR>
+		<TARLowerLimit>0</TARLowerLimit>
+		<TARUpperLimit>0</TARUpperLimit>
+		<TARAlpha>0.5</TARAlpha>
+		<HarvestAdj>Not adjusted</HarvestAdj>
+		<OceanHarvest>0</OceanHarvest>
+		<MainstemHarvest>0</MainstemHarvest>
+		<TribHarvest>0</TribHarvest>
+		<BroodStockRemoved>0</BroodStockRemoved>
+		<ProtMethName>string</ProtMethName>
+		<ProtMethURL>string</ProtMethURL>
+		<ProtMethDocumentation>string</ProtMethDocumentation>
+		<MethodAdjustments>string</MethodAdjustments>
+		<OtherDataSources>string</OtherDataSources>
+		<Comments>string</Comments>
+		<NullRecord>Yes</NullRecord>
+		<DataStatus>Final</DataStatus>
+		<IndicatorLocation>string</IndicatorLocation>
+		<MetricLocation>string</MetricLocation>
+		<MeasureLocation>string</MeasureLocation>
+		<ContactPersonFirst>string</ContactPersonFirst>
+		<ContactPersonLast>string</ContactPersonLast>
+		<ContactPhone>string</ContactPhone>
+		<ContactEmail>string</ContactEmail>
+		<MetaComments>string</MetaComments>
+		<SubmitAgency>string</SubmitAgency>
+		<RefID>0</RefID>
+		<UpdDate>2014-01-01T00:00:00</UpdDate>
+		<DataEntry>string</DataEntry>
+		<DataEntryNotes>string</DataEntryNotes>
+		<CompilerRecordID>string</CompilerRecordID>
+		<Publish>No</Publish>
+	</SARRecord>
+</SARTable>

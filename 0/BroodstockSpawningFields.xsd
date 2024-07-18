@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cax="http://www.exchangenetwork.net/schema/CAX/2" targetNamespace="http://www.exchangenetwork.net/schema/CAX/2" elementFormDefault="qualified" version="2">
+	<xsd:annotation>
+		<xsd:documentation>Schema name:  Coordinated Assessments Data Exchange (CAX).  This schema document file name is BroodstockSpawningFields.xsd and can be found at https://github.com/PSMFC-Streamnet-RMPC/cax-epa-exchange-xml.</xsd:documentation>
+		<xsd:documentation>Description:  This schema document utilizes user-defined data types found in the GeneralTypes.xsd.</xsd:documentation>
+		<xsd:documentation>Description:  This schema document defines the fields needed for defining a hatchery spawning record in the BroodstockSpawningRecord.xsd document.</xsd:documentation>
+		<xsd:documentation>Description:  "Broodstock" that were spawned are defined as the hatchery origin and unmarked fish that were actually spawned in a hatchery facility or hatchery complex, under a specific program.</xsd:documentation>
+		<xsd:documentation>Description:  The "Coordinated Assessments Hatchery Data Exchange Standards Version 20230614" document found at https://www.streamnet.org/resources/exchange-tools/des/ contains details of the data types exchanged.  If there are discrepancies between that document and this schema please contact Mike Banach or Greg Wilke to determine if there is a reason for the discrepancy, or if there is simply an error, and for direction on how to proceed.</xsd:documentation>
+		<xsd:documentation>Developed by:  This schema document was originally created July 11, 2024 by Michael Banach, StreamNet Project, Pacific States Marine Fisheries Commission.</xsd:documentation>
+		<xsd:documentation>Last updated:  This schema document was last updated [never updated].</xsd:documentation>
+		<xsd:documentation>Point of contact:  For schema questions, contact Mike at 503-595-3152 or mike_banach@psmfc.org.  For programming questions related to this schema contact Greg Wilke, StreamNet Project, Pacific States Marine Fisheries Commission, at 503-595-3157 or gwilke@psmfc.org.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="./GeneralTypes.xsd"/>
+	<xsd:element name="BroodFemales" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="BroodMales" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="BroodJacks" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="HOBFemales" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="HOBMales" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="HOBJacks" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="NOBFemales" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="NOBMales" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="NOBJacks" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="pHOBIJ" type="cax:ProportionDataType" nillable="true"/>
+	<xsd:element name="pHOBEJ" type="cax:ProportionDataType" nillable="true"/>
+	<xsd:element name="pNOBIJ" type="cax:ProportionDataType" nillable="true"/>
+	<xsd:element name="pNOBEJ" type="cax:ProportionDataType" nillable="true"/>
+	<xsd:element name="SpawningLocation" type="xsd:string" nillable="true"/>
+</xsd:schema>

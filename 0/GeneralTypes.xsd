@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cax="http://www.exchangenetwork.net/schema/CAX/2" targetNamespace="http://www.exchangenetwork.net/schema/CAX/2" elementFormDefault="qualified" version="2">
+	<xsd:annotation>
+		<xsd:documentation>Schema name:  Coordinated Assessments Data Exchange (CAX).  This schema document file name is GeneralTypes.xsd and can be found at https://github.com/PSMFC-Streamnet-RMPC/cax-epa-exchange-xml.</xsd:documentation>
+		<xsd:documentation>Description:  This schema document defines data types used in the other schema documents of the multi-document CAX schema.</xsd:documentation>
+		<xsd:documentation>Description:  The "Coordinated Assessments Data Exchange Standards Version 20240517" and "Coordinated Assessments Hatchery Data Exchange Standards Version 20230614 -- Pilot" documents, found at https://www.streamnet.org/resources/exchange-tools/des/, contain details of the data types exchanged.  If there are discrepancies between those documents and this schema please contact Mike Banach or Greg Wilke to determine if there is a reason for the discrepancy, or if there is simply an error, and for direction on how to proceed.</xsd:documentation>
+		<xsd:documentation>Note that some elements defined in this .xsd file, though they use the same name, may have different meanings among the various data types (NOSA, RperS, SAR, etc.).  Refer to the data exchange standards documents for definitions of the elements for each data type.</xsd:documentation>
+		<xsd:documentation>Developed by:  This schema document was originally created September 20, 2016 by Michael Banach, StreamNet Project, Pacific States Marine Fisheries Commission.  It was edited September 29, 2016 by William Rensmith (Windsor Solutions, Inc).</xsd:documentation>
+		<xsd:documentation>Last updated:  This schema document was last updated July 11, 2024.</xsd:documentation>
+		<xsd:documentation>Point of contact:  For schema questions, contact Mike at 503-595-3152 or mike_banach@psmfc.org.  For programming questions related to this schema contact Greg Wilke, StreamNet Project, Pacific States Marine Fisheries Commission, at 503-595-3157 or gwilke@psmfc.org.</xsd:documentation>
+	</xsd:annotation>
+	<!-- Elements -->
+	<!-- Elements -->
+	<!-- Elements -->
+	<xsd:element name="AffiliatedPopulation" type="xsd:string" nillable="true"/>
+	<xsd:element name="AvgLength" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="AvgWeight" type="xsd:float" nillable="true"/>
+	<xsd:element name="BestValue" type="cax:YesNoNotSpecifiedDataType" nillable="false"/>
+	<xsd:element name="BPAprojNum" type="xsd:string" nillable="true"/>
+	<xsd:element name="BroodYear" type="cax:YearDataType" nillable="false"/>
+	<xsd:element name="Citation" type="xsd:string" nillable="true"/>
+	<xsd:element name="CitationURL" type="xsd:string" nillable="true"/>
+	<xsd:element name="Comments" type="xsd:string" nillable="true"/>
+	<xsd:element name="CommonName" type="xsd:string" nillable="false"/>
+	<xsd:element name="CommonPopName" type="xsd:string" nillable="true"/>
+	<xsd:element name="CompilerRecordID" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="36"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ContactAgency" type="cax:ContactAgencyDataType" nillable="false"/>
+	<xsd:element name="ContactAgy" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="15"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ContactEmail" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ContactPersonFirst" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="30"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ContactPersonLast" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="30"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ContactPhone" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="30"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DataEntry" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DataEntryNotes" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="500"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DataSetVersion" type="xsd:string" nillable="true"/>
+	<xsd:element name="DataStatus" type="cax:DataStatusDataType" nillable="false"/>
+	<xsd:element name="ESU_DPS" type="xsd:string" nillable="true"/>
+	<xsd:element name="FishPerPound" type="xsd:float" nillable="true"/>
+	<xsd:element name="HarvestAdj" type="cax:HarvestAdjustmentDataType" nillable="true"/>
+	<xsd:element name="HatcheryFacility" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="255"/>
+				<xsd:minLength value="2"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="HatcheryProgram" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="255"/>
+				<xsd:minLength value="2"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="HLI_LastUpdated" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:dateTime">
+				<xsd:minInclusive value="2014-01-01T00:00:00"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ID" type="cax:GUIDDataType" nillable="false"/>
+	<xsd:element name="IndicatorLocation" type="xsd:string" nillable="true"/>
+	<xsd:element name="LastModifiedOn" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:dateTime">
+				<xsd:minInclusive value="2014-01-01T00:00:00"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LastUpdated" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:dateTime">
+				<xsd:minInclusive value="2014-01-01T00:00:00"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LengthType" type="xsd:string" nillable="true"/>
+	<xsd:element name="MainstemHarvest" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="MajorPopGroup" type="xsd:string" nillable="true"/>
+	<xsd:element name="MeasureLocation" type="xsd:string" nillable="true"/>
+	<xsd:element name="MetaComments" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="10000"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="MethodAdjustments" type="xsd:string" nillable="true"/>
+	<xsd:element name="MethodNumber" type="xsd:unsignedByte" nillable="false"/>
+	<xsd:element name="MetricLocation" type="xsd:string" nillable="true"/>
+	<xsd:element name="NOBroodStockRemoved" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="NullRecord" type="cax:YesNoDataType" nillable="false"/>
+	<xsd:element name="NumberReleased" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="OceanHarvest" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="OtherDataSources" type="xsd:string" nillable="true"/>
+	<xsd:element name="OutmigrationYear" type="cax:YearDataType" nillable="false"/>
+	<xsd:element name="PopFit" type="cax:PopFitDataType" nillable="true"/>
+	<xsd:element name="PopFitNotes" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="1000"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="PopID" type="xsd:unsignedShort" nillable="false"/>
+	<xsd:element name="PrimaryOperator" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="255"/>
+				<xsd:minLength value="2"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ProtMethName" type="xsd:string" nillable="true"/>
+	<xsd:element name="ProtMethURL" type="xsd:string" nillable="true"/>
+	<xsd:element name="ProtMethDocumentation" type="xsd:string" nillable="true"/>
+	<xsd:element name="Publish" type="cax:YesNoDataType" default="No" nillable="false"/>
+	<xsd:element name="RecoveryDomain" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Puget Sound"/>
+				<xsd:enumeration value="Willamette/Lower Columbia"/>
+				<xsd:enumeration value="Interior Columbia"/>
+				<xsd:enumeration value="Oregon Coast"/>
+				<xsd:enumeration value="Southern Oregon/Northern California Coast"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="RefID" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="ReleaseHUC_8" type="xsd:string" nillable="true"/>
+	<xsd:element name="ReleaseLocation" type="xsd:string" nillable="false"/>
+	<xsd:element name="ReleaseLat" type="xsd:float" nillable="true"/>
+	<xsd:element name="ReleaseLong" type="xsd:float" nillable="true"/>
+	<xsd:element name="ReleaseRegion" type="xsd:string" nillable="false"/>
+	<xsd:element name="ReleaseSeason" type="xsd:string" nillable="false"/>
+	<xsd:element name="ReleaseYear" type="cax:YearDataType" nillable="false"/>
+	<xsd:element name="ReturnDef" type="xsd:string" nillable="false"/>
+	<xsd:element name="ReturnLocation" type="xsd:string" nillable="false"/>
+	<xsd:element name="ReturnLat" type="xsd:float" nillable="true"/>
+	<xsd:element name="ReturnLong" type="xsd:float" nillable="true"/>
+	<xsd:element name="ReturnsMissing" type="cax:YesNoDataType" nillable="true"/>
+	<xsd:element name="ReturnsMissingExplanation" type="xsd:string" nillable="true"/>
+	<xsd:element name="Run" type="xsd:string" nillable="false"/>
+	<xsd:element name="SAR" type="cax:PercentDataType" nillable="true"/>
+	<xsd:element name="SARtype" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="Tributary to tributary"/>
+				<xsd:enumeration value="Tributary to named dam"/>
+				<xsd:enumeration value="Named dam to named dam"/>
+				<xsd:enumeration value="Named dam to tributary"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="SmoltToAdultLocs" type="xsd:string" nillable="true"/>
+	<xsd:element name="SNLoadDate" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:dateTime">
+				<xsd:minInclusive value="2014-01-01T00:00:00"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Stock" type="xsd:string" nillable="false"/>
+	<xsd:element name="StockID" type="xsd:nonNegativeInteger" nillable="false"/>
+	<xsd:element name="SubmitAgency" nillable="false">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="255"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="TAR" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="TimeSeriesID" type="xsd:nonNegativeInteger" nillable="false"/>
+	<xsd:element name="TrendID" type="xsd:nonNegativeInteger" nillable="false"/>
+	<xsd:element name="TribHarvest" type="xsd:nonNegativeInteger" nillable="true"/>
+	<xsd:element name="UpdDate" nillable="true">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:dateTime">
+				<xsd:minInclusive value="2014-01-01T00:00:00"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<!-- Types -->
+	<!-- Types -->
+	<!-- Types -->
+	<xsd:simpleType name="ContactAgencyDataType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Columbia River Inter-Tribal Fish Commission"/>
+			<xsd:enumeration value="Colville Confederated Tribes"/>
+			<xsd:enumeration value="Confederated Tribes and Bands of the Yakama Indian Nation"/>
+			<xsd:enumeration value="Confederated Tribes of the Umatilla Indian Reservation"/>
+			<xsd:enumeration value="Confederated Tribes of the Warm Springs Reservation of Oregon"/>
+			<xsd:enumeration value="Fish Passage Center"/>
+			<xsd:enumeration value="Idaho Department of Fish and Game"/>
+			<xsd:enumeration value="Nez Perce Tribe of Idaho"/>
+			<xsd:enumeration value="Northwest Indian Fisheries Commission"/>
+			<xsd:enumeration value="Oregon Department of Fish and Wildlife"/>
+			<xsd:enumeration value="Quantitative Consultants, Inc."/>
+			<xsd:enumeration value="Shoshone-Bannock Tribes Fisheries Department"/>
+			<xsd:enumeration value="Spokane Tribe of Indians"/>
+			<xsd:enumeration value="U.S. Fish and Wildlife Service"/>
+			<xsd:enumeration value="Washington Department of Fish and Wildlife"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DataStatusDataType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Draft"/>
+			<xsd:enumeration value="Reviewed"/>
+			<xsd:enumeration value="Final"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="GUIDDataType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">The representation of a GUID (globally unique identifier), generally the id of an element.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="36"/>
+			<xsd:maxLength value="36"/>
+			<xsd:pattern value="[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="HarvestAdjustmentDataType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Ocean"/>
+			<xsd:enumeration value="Ocean and mainstem"/>
+			<xsd:enumeration value="Ocean and mainstem and tributaries"/>
+			<xsd:enumeration value="Mainstem"/>
+			<xsd:enumeration value="Mainstem and tributaries"/>
+			<xsd:enumeration value="Tributaries"/>
+			<xsd:enumeration value="Not adjusted"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PercentDataType">
+		<xsd:restriction base="xsd:float">
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="100"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PopFitDataType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Same"/>
+			<xsd:enumeration value="Portion"/>
+			<xsd:enumeration value="Multiple"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ProportionDataType">
+		<xsd:restriction base="xsd:float">
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="RearingTypeDataType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Hatchery"/>
+			<xsd:enumeration value="Natural"/>
+			<xsd:enumeration value="Mixed"/>
+			<xsd:enumeration value="Unknown"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="YearDataType">
+		<xsd:restriction base="xsd:nonNegativeInteger">
+			<xsd:minInclusive value="1930"/>
+			<xsd:maxInclusive value="2050"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="YesNoDataType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="No"/>
+			<xsd:enumeration value="Yes"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="YesNoNotSpecifiedDataType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="No"/>
+			<xsd:enumeration value="Yes"/>
+			<xsd:enumeration value="Not specified"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
